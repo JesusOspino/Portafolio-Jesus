@@ -4,4 +4,4 @@ Portafolio de practica para desarrollo web de Jesus Ospino.
 
 ## proyecto
 
--[Portafolio-CV](https://JesusOspino.github.io/Portafolio-Jesus/Portafolio-cv)
+-[Portafolio-CV](https://JesusOspino.github.io/Portafolio-Jesus/Portafolio-CV)
