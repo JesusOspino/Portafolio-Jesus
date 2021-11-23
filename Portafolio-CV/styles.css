@@ -498,6 +498,59 @@ p {
 	color: var(--white-color);
 }
 
+.portfolio-card {
+	position: relative;
+	width: 100%;
+	height: 400px;
+	margin: 0 auto;
+	display: block;
+}
+
+.portfolio-card img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.portfolio-card-info {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding: 1rem;
+	background-color: var(--firs-alpha-color);
+	color: var(--white-color);
+	opacity: 0;
+	pointer-events: none;
+	transition: all 0.5s ease-in-out;
+}
+
+.portfolio-card:hover .portfolio-card-info {
+	opacity: 1;
+	pointer-events: auto;
+}
+
+.portfolio-card-info > div {
+	padding: 1rem;
+	border: thin solid var(--white-color);
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.portfolio-card-info div a {
+	display: inline-block;
+	position: absolute;
+	bottom: 1rem;
+	padding: 1rem;
+	border-radius: 0.5rem;
+	text-decoration: none;
+	font-size: 20px;
+	background-color: var(--second-alpha-color);
+	color: var(--white-color);
+}
+
 .skill-content {
 	padding: 1rem;
 	display: grid;
@@ -544,6 +597,15 @@ p {
 		display: grid;
 		grid-template-columns: repeat(2, 48%);
 		justify-content: space-between;
+	}
+
+	.portfolio > .container {
+		display: grid;
+		grid-template-columns: repeat(2, 50%);
+	}
+
+	.portfolio .section-title {
+		grid-column: span 2;
 	}
 
 	.services > .container {
