@@ -16,7 +16,7 @@
 	--title-color: #333;
 	--text-color: #222;
 	--white-alpha-color: rgba(255, 255, 255, 0.5);
-	--black-alpha-color: rgba(0, 0, 0, 0.5);
+	--black-alpha-color: rgba(0, 0, 0, 0.6);
 	--font: 'Ubuntu', sans-serif;
 	--max-width: 1200px;
 	--header-height: 4rem;
@@ -55,22 +55,27 @@ h1 {
 	margin: 0;
 	font-size: 2rem;
 }
+
 h2 {
 	margin: 0;
 	font-size: 1.5rem;
 }
+
 h3 {
 	margin: 0;
 	font-size: 1.25rem;
 }
+
 h4 {
 	margin: 0;
 	font-size: 1rem;
 }
+
 h5 {
 	margin: 0;
 	font-size: 0.85rem;
 }
+
 h6 {
 	margin: 0;
 	font-size: 0.7rem;
@@ -94,7 +99,7 @@ p {
 	max-width: 800px;
 }
 
-.contact-form > * {
+.contact-form>* {
 	padding: 0.5rem;
 	margin: 1rem auto;
 	display: block;
@@ -195,7 +200,7 @@ p {
 
 /********* HeroImage **********/
 .hero-image {
-	background-image: url('assets/hero-image-home.jpg');
+	background-image: url('assets/me/hero.webp');
 	background-image: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -430,7 +435,7 @@ p {
 
 /*----------------------- Site Styles ----------------------*/
 
-.about > article {
+.about>article {
 	margin-bottom: 2rem;
 }
 
@@ -458,7 +463,7 @@ p {
 	fill: var(--firs-color);
 }
 
-.contact-card > small {
+.contact-card>small {
 	margin-top: 1rem;
 }
 
@@ -481,7 +486,7 @@ p {
 	background-color: var(--second-color);
 }
 
-.header > .container {
+.header>.container {
 	display: flex;
 	justify-content: space-between;
 	align-items: centerk;
@@ -531,7 +536,7 @@ p {
 	pointer-events: auto;
 }
 
-.portfolio-card-info > div {
+.portfolio-card-info>div {
 	padding: 1rem;
 	border: thin solid var(--white-color);
 	width: 100%;
@@ -558,9 +563,9 @@ p {
 	row-gap: 3rem;
 }
 
-.skill-content > svg {
-	width: 100px;
-	height: 100px;
+.skill-content>img {
+	width: 70px;
+	height: 70px;
 	margin: auto;
 }
 
@@ -599,7 +604,7 @@ p {
 		justify-content: space-between;
 	}
 
-	.portfolio > .container {
+	.portfolio>.container {
 		display: grid;
 		grid-template-columns: repeat(2, 50%);
 	}
@@ -608,7 +613,7 @@ p {
 		grid-column: span 2;
 	}
 
-	.services > .container {
+	.services>.container {
 		display: grid;
 		grid-template-columns: repeat(2, 45%);
 		justify-content: space-between;
@@ -617,6 +622,10 @@ p {
 
 	.services .section-title {
 		grid-column: span 2;
+	}
+
+	.skill-content {
+		grid-template-columns: repeat(4, 1fr);
 	}
 }
 
